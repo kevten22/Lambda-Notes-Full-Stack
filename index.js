@@ -5,7 +5,7 @@ const cors = require('cors');
 const server = express();
 
 const corsOptions = {
-   origin: 'https://kevintenalambdanotes.netlify.com/'
+   origin: 'https://kevintenalambdanotes.netlify.com'
   };
 
 server.use(express.json());

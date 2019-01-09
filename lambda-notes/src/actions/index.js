@@ -20,6 +20,7 @@ export const fetchNotes = () => {
     return function(dispatch) {
         noteData.then( ({data}) => {
             dispatch({type: FETCHED, payload:data});
+            console.log(data);
         })
         .catch(err => {dispatch({type:ERROR, payload: err})})
     }
